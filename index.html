@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ToDo Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header"><h1>The ToDo Project</h1></div>
+    <div class="app-container">
+        <div class="form-container">
+            <div class="form-content">
+                <form action="" id="projectForm">
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                    <label for="description">Description</label>
+                    <input type="text" id="description">
+                    <label for="dueDate">Due Date</label>
+                    <input type="date" id="dueDate">
+                    <label for="priority">Priority</label>
+                    <select name="priority" id="priority"> 
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="submit" value="Add Project">
+                </form>
+            </div>
+        </div>
+        <div class="table-container">
+            <div class="table-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Title</th>
+                            <th>Description</th>
+                            <th>Due Date</th>
+                            <th>Priority</th>
+                            <th>Steps</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookList">
+                        <tr>
+                            <td>Do weekly grocery shopping</td>
+                            <td>Out of milk, remember we have Jenny and Mike coming over for dinner on Thursday</td>
+                            <td>Today</td>
+                            <td>High</td>
+                            <td><button id="steps">Add Steps</button></td>
+                            <td id="statusCell"><button id="status">X</button></td>
+                        </tr>
+                        <tr>
+                            <td>Do weekly grocery shopping</td>
+                            <td>Out of milk, remember we have Jenny and Mike coming over for dinner on Thursday</td>
+                            <td>Today</td>
+                            <td>High</td>
+                            <td><button id="steps">Add Steps</button></td>
+                            <td id="statusCell"><button id="status">X</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
