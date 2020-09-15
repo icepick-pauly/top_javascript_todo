@@ -20,12 +20,6 @@
                     <input type="text" id="description">
                     <label for="dueDate">Due Date</label>
                     <input type="date" id="dueDate">
-                    <label for="priority">Priority</label>
-                    <select name="priority" id="priority"> 
-                        <option value="high">High</option>
-                        <option value="medium">Medium</option>
-                        <option value="Low">Low</option>
-                    </select>
                     <input type="submit" value="Add Project">
                 </form>
             </div>
@@ -37,7 +31,7 @@
                         <tr>
                             <th>Project Title</th>
                             <th>Description</th>
-                            <th>Due Date</th>
+                            <th id="dateColumn">Due Date</th>
                             <th>Priority</th>
                             <th>Steps</th>
                             <th>Status</th>
@@ -48,17 +42,29 @@
                             <td>Do weekly grocery shopping</td>
                             <td>Out of milk, remember we have Jenny and Mike coming over for dinner on Thursday</td>
                             <td>Today</td>
-                            <td>High</td>
+                            <td>
+                                <select name="priority" id="priority"> 
+                                    <option value="high">High</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="Low">Low</option>
+                                </select>
+                            </td>
                             <td><button id="steps">Add Steps</button></td>
-                            <td id="statusCell"><button id="status">X</button></td>
+                            <td id="statusCell"><button id="status">Incomplete</button></td>
                         </tr>
                         <tr>
                             <td>Do weekly grocery shopping</td>
                             <td>Out of milk, remember we have Jenny and Mike coming over for dinner on Thursday</td>
                             <td>Today</td>
-                            <td>High</td>
+                            <td>
+                                <select name="priority" id="priority"> 
+                                    <option value="high">High</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="Low">Low</option>
+                                </select>
+                            </td>
                             <td><button id="steps">Add Steps</button></td>
-                            <td id="statusCell"><button id="status">X</button></td>
+                            <td id="statusCell"><button id="status">Incomplete</button></td>
                         </tr>
                     </tbody>
                 </table>

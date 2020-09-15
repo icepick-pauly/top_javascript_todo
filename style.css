@@ -27,7 +27,7 @@ body {
     margin: 1em 3em;
 }
 
-input[type=text], input[type=date], select {
+input[type=text], input[type=date], select, #steps, #status {
     width: 100%;
     border: none;
     border-radius: 5px;
@@ -70,34 +70,33 @@ th {
     padding: .5em;
 }
 
+th:nth-child(2) {
+    width: 300px;
+}
+
 tr:nth-child(even) {
     background-color: rgba(143, 150, 255, 0.3);
 }
 
-table #steps {
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    font-family: inherit;
-}
 
 table #steps:hover {
     cursor: pointer;
     background-color: rgba(143, 150, 255, 0.3);
     color: white;
     border: 1px white solid;
-}
+    padding: .2em;
+} 
 
 
 table #status {
     border: none;
-    border-radius: 5px;
     font-family: inherit;
     background-color: rgb(255, 44, 44);
     color: white;
     padding: .3em .6em;
+} 
+
+table #status:hover {
+    cursor:pointer;
 }
 
-table #statusCell {
-    text-align: center;
-}
