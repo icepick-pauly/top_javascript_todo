@@ -1,6 +1,8 @@
 import { Project } from "./addProject"
 import { addProjectToList } from "./addProject"
+import { completed } from "./projectStatus"
 import { changeStatus } from "./projectStatus"
+import { revertStatus } from "./projectStatus"
 
 
 
@@ -17,6 +19,10 @@ document.querySelector('#projectForm').addEventListener('submit', (e) => {
 });
 
 document.querySelector('#projectList').addEventListener('click', (e) => {
-        changeStatus(e.target);  
+        if (completed == false) {
+        changeStatus(e.target); 
+        } else {
+            revertStatus(e.target);
+        } 
 });
 
