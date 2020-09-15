@@ -1,5 +1,6 @@
 import { Project } from "./addProject"
 import { addProjectToList } from "./addProject"
+import { changeStatus } from "./projectStatus"
 
 
 
@@ -14,3 +15,8 @@ document.querySelector('#projectForm').addEventListener('submit', (e) => {
 
     addProjectToList(project);
 });
+
+document.querySelector('#projectList').addEventListener('click', (e) => {
+        changeStatus(e.target);  
+});
+

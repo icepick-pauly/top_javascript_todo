@@ -22,7 +22,7 @@ export function addProjectToList(project) {
         </select>
     </td>
     <td><button id="steps">Add Steps</button></td>
-    <td><button id="status">Incomplete</button></td>
+    <td><button class="status" id="status">Incomplete</button></td>
     `;
     list.appendChild(row);
 };
