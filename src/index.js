@@ -3,7 +3,7 @@ import { addProjectToList } from "./addProject"
 import { completed } from "./projectStatus"
 import { changeStatus } from "./projectStatus"
 import { revertStatus } from "./projectStatus"
-
+import { removeProject } from "./removeProject"
 
 
 document.querySelector('#projectForm').addEventListener('submit', (e) => {
@@ -20,9 +20,14 @@ document.querySelector('#projectForm').addEventListener('submit', (e) => {
 
 document.querySelector('#projectList').addEventListener('click', (e) => {
         if (completed == false) {
-        changeStatus(e.target); 
+            changeStatus(e.target); 
         } else {
             revertStatus(e.target);
         } 
 });
+
+document.querySelector('#projectList').addEventListener('click', (e) => {
+    removeProject(e.target);
+})
+
 

@@ -9,8 +9,8 @@ export class Project {
 
 export function addProjectToList(project) {
     const list = document.querySelector('#projectList');
-    const row = document.createElement('tr');
-    row.innerHTML = `
+    const projectRow = document.createElement('tr');
+    projectRow.innerHTML = `
     <td>${project.title}</td>
     <td>${project.description}</td>
     <td>${project.dueDate}</td>
@@ -21,10 +21,27 @@ export function addProjectToList(project) {
             <option value="Low">Low</option>
         </select>
     </td>
-    <td><button id="steps">Add Steps</button></td>
     <td><button class="status" id="status">Incomplete</button></td>
+    <td><a href="#" class="delete">X</a></td>
     `;
-    list.appendChild(row);
+    const stepRow = document.createElement('tr')
+    stepRow.innerHTML = `
+    <td>
+        <input type="text" id="stepTitle">
+        <input type="submit" id="stepSubmit" value="Add Step">
+    </td>   
+    <td>
+        <ul id="stepList">
+            
+        </ul>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    `
+    list.appendChild(projectRow);
+    list.appendChild(stepRow);
 };
 
     
