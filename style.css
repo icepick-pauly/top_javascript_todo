@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: linear-gradient(45deg, rgb(0, 116, 90), rgb(41, 55, 255));
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+    color: white;
+}
+
+.header {
+    padding-bottom: 5px;
+    border-bottom: 2px white solid;
+}
+
+.header h1 {
+    margin-left: 1em;
+}
+
+.app-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 1em 3em;
+}
+
+input[type=text], input[type=date], select,  #status {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 1em;
+    padding: .3em;
+    font-family: inherit;
+}
+
+input[type=submit] {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: .3em;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgba(143, 150, 255, 0.3);
+    color: white;
+    border: 1px white solid;
+}
+
+.table-container {
+    margin-left: 2em;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: rgba(143, 150, 255, 0.3);
+}
+
+th {
+    padding: .5em;
+}
+
+th:nth-child(2) {
+    width: 300px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(143, 150, 255, 0.3);
+}
+
+table #status {
+    border: none;
+    font-family: inherit;
+    background-color: rgb(255, 44, 44);
+    color: white;
+    padding: .3em .6em;
+} 
+
+table #status:hover {
+    cursor:pointer;
+}
+
+.delete {
+    text-align: center;
+    border: none;
+    font-family: inherit;
+    background-color: rgb(255, 44, 44);
+    color: white;
+    padding: .3em .6em;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+}

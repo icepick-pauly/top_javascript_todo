@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ToDo Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="header"><h1>The ToDo Project</h1></div>
+    <div class="app-container">
+        <div class="form-container">
+            <div class="form-content">
+                <form action="" id="projectForm">
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                    <label for="description">Description</label>
+                    <input type="text" id="description">
+                    <label for="dueDate">Due Date</label>
+                    <input type="date" id="dueDate">
+                    <input type="submit" value="Add Project">
+                </form>
+            </div>
+        </div>
+        <div class="table-container">
+            <div class="table-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Title</th>
+                            <th>Description</th>
+                            <th id="dateColumn">Due Date</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody id="projectList">
+                    
+                       <!-- <tr id="stepRow">
+                            <td>
+                                <input type="text" id="addStep">
+                                <input type="submit" value="Add Step">
+                            </td>   
+                            <td>
+                                <ul>
+                                    
+                                </ul>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
