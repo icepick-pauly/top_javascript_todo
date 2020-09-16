@@ -1,9 +1,9 @@
-import { Project } from "./addProject"
-import { addProjectToList } from "./addProject"
-import { completed } from "./projectStatus"
-import { changeStatus } from "./projectStatus"
-import { revertStatus } from "./projectStatus"
-import { removeProject } from "./removeProject"
+import { Project } from "./modules/addProject"
+import { addProjectToList } from "./modules/addProject"
+import { completed } from "./modules/projectStatus"
+import { changeStatus } from "./modules/projectStatus"
+import { revertStatus } from "./modules/projectStatus"
+import { removeProject } from "./modules/removeProject"
 
 
 document.querySelector('#projectForm').addEventListener('submit', (e) => {

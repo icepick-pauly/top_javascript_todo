@@ -28,7 +28,7 @@ export function addProjectToList(project) {
     stepRow.innerHTML = `
     <td>
         <input type="text" id="stepTitle">
-        <input type="submit" id="stepSubmit" value="Add Step">
+        <input type="submit"  value="Add Step">
     </td>   
     <td>
         <ul id="stepList">
